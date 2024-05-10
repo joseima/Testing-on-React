@@ -1,4 +1,5 @@
 import { render, screen, fireEvent, getByLabelText } from '@testing-library/react';
+import userEvent from "@testing-library/user-event";
 import AcceptCookies from '../components/AcceptCookies';
 
 describe('AcceptCookies component', () => {
@@ -16,10 +17,11 @@ describe('AcceptCookies component', () => {
         expect(checkbox).not.toBeChecked();
     });
 
-    test('si cambia el texto al pulsar el checkbox', () => {
-        fireEvent.click(checkbox);
+    test('si cambia el texto al pulsar el checkbox',  () => {
+        userEvent.click(checkbox);
+        //fireEvent.click(checkbox);
         expect(checkbox).toBeChecked();
-        expect(article.textContent).toBe('Cookies aceptadas');
+       expect(article.textContent).toBe('Cookies aceptadas');
     })
 
 })
