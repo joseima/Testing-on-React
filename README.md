@@ -1,8 +1,4 @@
-# Webinar Youtube
-Testing Components en React con Jest paso a paso
 
-## Curso completo
-[AQUÍ](https://www.youtube.com/watch?v=FjJu3hcPSCY&t=1s)
 
 # Getting Started with Create React App
 
